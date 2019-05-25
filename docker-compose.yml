@@ -27,10 +27,6 @@ services:
     image: 'codercom/code-server'
     ports:
       - '40:8443'
-    volumes:
-        - "${PWD}:/home/coder/project"
-    environment:
-      PASSWORD: ${PASSWORD}
     volumes_from:
       - 'wordpress'
     depends_on:
