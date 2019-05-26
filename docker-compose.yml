@@ -31,7 +31,6 @@ services:
       - 'wordpress'
     depends_on:
       - wordpress
-    command: /bitnami/wordpress/wp-content/themes/twentynineteen
 volumes:
   mariadb_data:
     driver: local
